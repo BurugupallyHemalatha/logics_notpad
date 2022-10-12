@@ -1,0 +1,141 @@
+**  Collections.sort(name//change according ); for soritng  
+
+**list.forEach(l->{
+ System.out.println(l);
+}); 
+
+**
+Iterator<String> itr =al.iterator();
+itr.forEachRemaing(a->{
+System.out.println(a);
+} 
+
+//Three ways of printing arraylist
+import java.util.*;  
+ public class ArrayListExample1{  
+ public static void main(String args[]){  
+  List<String> list=new ArrayList<>();    
+      list.add("Mango");   
+      list.add("hema");
+System.out.println(list);//normal
+for(String a:list){//foreach method
+System.out.println(a);
+} 
+for(int i=0;i<list.size();i++){//with index position
+System.out.println(list.get(i));
+}
+ }  
+}
+
+//using iterator
+import java.util.*;  
+ public class ArrayListExample1{  
+ public static void main(String args[]){  
+    List<String> al = new ArrayList<>();
+    al.add("hema");
+    al.add("reddy");
+//using iterator we are printing
+   ListIterator<String> itr =al.listIterator();
+   System.out.println("in forward direction");
+   while(itr.hasNext()){//forward
+   System.out.println(itr.next());//printing the element and move to next  
+   }
+  System.out.println("in forward previous");
+   while(itr.hasPrevious()){//Reverse order
+   System.out.println(itr.previous());//printing the element and move to previous  
+   }
+ }  
+}  
+
+//this is about if else statement
+import java.util.*;  
+ public class ArrayListExample1{  
+ public static void main(String args[]){  
+  List<String> list=new ArrayList<>();    
+      list.add("Mango");   
+      list.add("hema");
+System.out.println(list);//normal
+int hema=90;
+if(hema==900){
+for(String a:list){//foreach method
+System.out.println(a);
+} 
+}
+else{
+for(int i=0;i<list.size();i++){//with index position
+System.out.println(i);
+}
+}
+ }  
+} 
+//methods
+
+import java.util.*;  
+ public class ArrayListExample1{  
+ public static void main(String args[]){  
+  ArrayList<String> list=new ArrayList<>();//Creating arraylist    
+      list.add("Mango");//Adding object in arraylist    
+      list.add("Apple");    
+      list.add("Banana");    
+      list.add("Grapes");   
+      list.add(2,"hema");   
+ List<String> list2=new ArrayList<>();
+       //list.addAll(list2);
+      //list2.clear();  
+      list2.add("Mango");   
+      list2.add("Apple");    
+      list2.add("Banana");    
+      list2.add("Grapes");  
+      list2.add(2,"hema"); 
+if((list.equals(list2))){
+     for(String a:list){
+     System.out.println(a);
+     }
+        if(list.isEmpty()){
+          System.out.println("value");
+        }
+        else{
+         System.out.println("wrong");
+       }
+}
+else{
+System.out.println("..........");
+}
+list.sort(String.CASE_INSENSITIVE_ORDER);
+System.out.println(list);
+
+    System.out.println(list.lastIndexOf("Mango"));
+System.out.println(list.indexOf("Grapes"));
+System.out.println(list.contains("Mango"));
+list2.remove(4);
+list.removeAll(list2);
+
+list.set(4,"no");
+System.out.println(list);
+ }  
+} 
+
+//storingobjects
+import java.util.*; 
+class Student{
+int rollno;
+String name,address;
+Student(int rollno,String name,String address){
+this.rollno=rollno;
+this.name=name;
+this.address=address;
+}
+}
+public class ArrayListExample2{  
+ public static void main(String args[]){  
+ List<Student> lis=new ArrayList();
+  Student s1 =new Student(1,"hema","siddipet");
+   Student s2 =new Student(2,"hemalatha","gajwel");
+  Student s3 =new Student(3,"hemalatha reddy ","lbnagar");
+  Student s4 =new Student(4,"hemalatha reddy burugupally","jal");
+lis.add(s1);
+for(Student s:lis){
+System.out.println(s.rollno+""+s.name+""+s.address);
+}
+ }  
+}  

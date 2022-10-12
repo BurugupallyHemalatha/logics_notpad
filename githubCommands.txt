@@ -1,0 +1,27 @@
+first of all 
+ ->install git 
+ ->install git bash 
+ ->goto to folder where your saving it right click and open with gitbash
+
+if your using it first time in your system with your github then add it globally
+
+git config --global name "HemaReddy"
+git config --global email "my@gmail.com"
+
+git init
+git add README.md  //we are adding only one file 
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/BurugupallyHemalatha/xyz.git
+git push -u origin main
+
+or simply
+
+git init 
+git add .// it add all the files
+git status
+git commit -m committed
+git remote add origin https://github.com/BurugupallyHemalatha/xyz.git
+git branch -M main
+git push -u origin main
+

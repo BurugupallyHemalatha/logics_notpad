@@ -1,0 +1,17 @@
+
+import java.util.*;  
+public class ArrayListExample2{  
+ public static void main(String args[]){  
+  ArrayList<String> list=new ArrayList<String>();//Creating arraylist  
+  list.add("Mango");//Adding object in arraylist    
+  list.add("Apple");    
+  list.add("Banana");    
+  list.add("Grapes"); 
+//methods
+list.add()
+list.sort(String.CASE_INSENSITIVE_ORDER)
+list.sort(Comparator.naturalOrder());
+list.subList(2,7);   
+ 
+ }  
+}  

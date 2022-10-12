@@ -1,0 +1,60 @@
+class Splender{
+static void show(int x){
+System.out.println("para");
+}
+static void show(int y,int z){
+System.out.println("param");
+}
+int  rollno;
+String name;
+static String college;
+Splender(int r, String n){
+rollno=r;
+name=n;
+}
+void display(){
+System.out.println(rollno+""+name+""+college);
+}
+static void  changee(){
+college="gmr";
+}
+public static void main(String args[]){
+Splender ss=new Splender(101,"hema");
+Splender sss=new Splender(102,"anu");
+show(3,89);
+ss.display();
+sss.display();
+Splender.changee();
+}
+}
+
+//overloading for main method:
+
+class Splender{
+
+public static void main(int[] args){
+System.out.println("main method");
+}
+public static void main(int args){
+System.out.println("value");
+}
+public static void main(String args[]){
+main(67);
+main(new int[] {1,2,3});
+}
+}
+
+
+//construcor for overloading
+class Splender{
+int roll;
+Splender(){
+System.out.println("....");
+}
+Splender(int roll){
+System.out.println("value");
+}
+public static void main(String args[]){
+Splender s=new Splender(89);
+}
+}

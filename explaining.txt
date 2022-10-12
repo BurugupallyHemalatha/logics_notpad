@@ -1,0 +1,10 @@
+converts one datatype to anthor data type is known as type casting.
+we can do this in both the ways 
+automatic convertion by compiler we call that as implicit converter 
+manual convertion  by programmer we call that as explicit converter 
+
+we having to two type casting :
+they area:
+1.widening type casting 
+it converts lower to higher 
+2.narrowing type casting 
